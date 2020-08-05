@@ -1,5 +1,5 @@
-export const handler = (lambda) => {
-    return async (event, context) => {
+export default function handler(lambda) {
+    return async function (event, context) {
         let body, statusCode;
 
         try {
@@ -17,6 +17,6 @@ export const handler = (lambda) => {
                 "Access-Control-Allow-Origin": "*",
                 "Access-Control-Allow-Credentials": true,
             },
-        }
-    }
-}
+        };
+    };
+};
