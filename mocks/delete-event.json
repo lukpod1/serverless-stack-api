@@ -1,5 +1,7 @@
 {
-    "body": "{\"content\":\"test 2\",\"attachment\":\"hello.jpg\"}",
+    "pathParameters": {
+        "id": ""
+    },
     "requestContext": {
         "identity": {
             "cognitoIdentityId": ""
